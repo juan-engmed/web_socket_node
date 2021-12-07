@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Demonstração - WebSocket</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <h1>Testando o protocolo Websocket</h1>
+
+      <div id="status">Conectando...</div>
+
+      <ul id="messages"></ul>
+
+      <form id="message-form" action="#" method="post">
+        <input type="text" name="" id="message1">
+        <input type="text" name="" id="message2">
+
+        <select>
+          <optgroup id="myOptgroup" label="Selecione a operação">
+            <option value="add">Add</option>
+            <option value="sub">Sub</option>
+            <option value="multi">Multi</option>
+            <option value="div">Div</option>
+          </optgroup>
+        </select>
+        <button type="submit">Calcular</button>
+        <button type="button" id="closeBtn">Encerrar conexão</button>
+        
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
